@@ -9,28 +9,15 @@
 }
 
 .card__image {
-  position: relative;
-  aspect-ratio: 390 / 230;
+  aspect-ratio: 780 / 480;
   overflow: hidden;
   background-color: $color-yellow;
-  background-image:
-    radial-gradient(circle, transparent 30%, rgba(#ffffff, 0.16) 31% 32%, transparent 33%),
-    radial-gradient(circle, transparent 40%, rgba(#ffffff, 0.14) 41% 42%, transparent 43%),
-    radial-gradient(circle, transparent 50%, rgba(#ffffff, 0.12) 51% 52%, transparent 53%);
-  background-position: center;
-  background-size: cover;
 }
 
 .card__photo {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 72%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
-  transform: translateX(-50%);
-  mix-blend-mode: multiply;
 }
 
 .card__body {

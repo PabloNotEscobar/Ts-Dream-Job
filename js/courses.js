@@ -14,7 +14,7 @@ const COURSES = [
     category: 'marketing',
     price: 100,
     author: 'Jerome Bell',
-    image: 'https://randomuser.me/api/portraits/men/32.jpg'
+    image: 'assets/course-1.png'
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const COURSES = [
     category: 'management',
     price: 480,
     author: 'Marvin McKinney',
-    image: 'https://randomuser.me/api/portraits/men/55.jpg'
+    image: 'assets/course-2.png'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const COURSES = [
     category: 'hr',
     price: 200,
     author: 'Leslie Alexander Li',
-    image: 'https://randomuser.me/api/portraits/men/41.jpg'
+    image: 'assets/course-3.png'
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const COURSES = [
     category: 'marketing',
     price: 530,
     author: 'Kristin Watson',
-    image: 'https://randomuser.me/api/portraits/women/44.jpg'
+    image: 'assets/course-4.png'
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const COURSES = [
     category: 'design',
     price: 500,
     author: 'Guy Hawkins',
-    image: 'https://randomuser.me/api/portraits/men/22.jpg'
+    image: 'assets/course-5.png'
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const COURSES = [
     category: 'management',
     price: 400,
     author: 'Dianne Russell',
-    image: 'https://randomuser.me/api/portraits/women/68.jpg'
+    image: 'assets/course-6.png'
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ const COURSES = [
     category: 'development',
     price: 600,
     author: 'Brooklyn Simmons',
-    image: 'https://randomuser.me/api/portraits/men/12.jpg'
+    image: 'assets/course-7.png'
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ const COURSES = [
     category: 'hr',
     price: 150,
     author: 'Kathryn Murphy',
-    image: 'https://randomuser.me/api/portraits/women/90.jpg'
+    image: 'assets/course-8.png'
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ const COURSES = [
     category: 'design',
     price: 240,
     author: 'Cody Fisher',
-    image: 'https://randomuser.me/api/portraits/men/36.jpg'
+    image: 'assets/course-9.png'
   },
   {
     id: 10,
@@ -86,7 +86,7 @@ const COURSES = [
     category: 'marketing',
     price: 320,
     author: 'Cameron Williamson',
-    image: 'https://randomuser.me/api/portraits/men/75.jpg'
+    image: 'assets/course-1.png'
   },
   {
     id: 11,
@@ -94,7 +94,7 @@ const COURSES = [
     category: 'marketing',
     price: 280,
     author: 'Wade Warren',
-    image: 'https://randomuser.me/api/portraits/men/60.jpg'
+    image: 'assets/course-2.png'
   },
   {
     id: 12,
@@ -102,7 +102,7 @@ const COURSES = [
     category: 'management',
     price: 360,
     author: 'Ralph Edwards',
-    image: 'https://randomuser.me/api/portraits/men/47.jpg'
+    image: 'assets/course-3.png'
   },
   {
     id: 13,
@@ -110,7 +110,7 @@ const COURSES = [
     category: 'hr',
     price: 220,
     author: 'Jenny Wilson',
-    image: 'https://randomuser.me/api/portraits/women/22.jpg'
+    image: 'assets/course-4.png'
   },
   {
     id: 14,
@@ -118,7 +118,7 @@ const COURSES = [
     category: 'hr',
     price: 310,
     author: 'Robert Fox',
-    image: 'https://randomuser.me/api/portraits/men/18.jpg'
+    image: 'assets/course-5.png'
   },
   {
     id: 15,
@@ -126,7 +126,7 @@ const COURSES = [
     category: 'hr',
     price: 190,
     author: 'Esther Howard',
-    image: 'https://randomuser.me/api/portraits/women/55.jpg'
+    image: 'assets/course-6.png'
   },
   {
     id: 16,
@@ -134,7 +134,7 @@ const COURSES = [
     category: 'development',
     price: 450,
     author: 'Devon Lane',
-    image: 'https://randomuser.me/api/portraits/men/85.jpg'
+    image: 'assets/course-7.png'
   },
   {
     id: 17,
@@ -142,6 +142,6 @@ const COURSES = [
     category: 'development',
     price: 420,
     author: 'Floyd Miles',
-    image: 'https://randomuser.me/api/portraits/men/3.jpg'
+    image: 'assets/course-8.png'
   }
 ];
