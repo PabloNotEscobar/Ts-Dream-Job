@@ -5,6 +5,12 @@
   position: relative;
   flex: 0 1 fluid(260, 320);
   min-width: 220px;
+  margin-left: auto;
+
+  @media (max-width: 560px) {
+    flex-basis: 100%;
+    min-width: 0;
+  }
 }
 
 .search__input {
