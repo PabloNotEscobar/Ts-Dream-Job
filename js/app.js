@@ -58,6 +58,7 @@
           <h2 class="card__title">${course.title}</h2>
           <div class="card__meta">
             <span class="card__price">$${course.price}</span>
+            <span class="card__divider"></span>
             <span class="card__author">by ${course.author}</span>
           </div>
         </div>
