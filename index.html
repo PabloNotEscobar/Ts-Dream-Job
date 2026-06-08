@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our online courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="courses">
+    <span class="courses__decor courses__decor--dots" aria-hidden="true"></span>
+    <span class="courses__decor courses__decor--quotes" aria-hidden="true"></span>
+    <span class="courses__decor courses__decor--chevrons" aria-hidden="true"></span>
+
+    <div class="courses__container">
+      <header class="courses__header">
+        <p class="courses__subtitle">Enjoy your studying!</p>
+        <h1 class="courses__title">Our online courses</h1>
+      </header>
+
+      <div class="courses__panel">
+        <nav class="tabs">
+          <ul class="tabs__list" data-tabs></ul>
+        </nav>
+
+        <form class="search" role="search" data-search>
+          <input class="search__input" type="search" placeholder="Search course..." aria-label="Search course" data-search-input>
+          <button class="search__button" type="submit" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8.5" cy="8.5" r="6.5" stroke="currentColor" stroke-width="1.6"/>
+              <line x1="13.6" y1="13.4" x2="18" y2="17.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="courses__grid" data-grid></div>
+
+      <p class="courses__empty" data-empty hidden>No courses found.</p>
+
+      <div class="courses__footer">
+        <button class="load-more" type="button" data-load-more>
+          <svg class="load-more__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.7 9.2A8 8 0 1 0 19 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M19 4v5h-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="load-more__text">Load more</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/courses.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

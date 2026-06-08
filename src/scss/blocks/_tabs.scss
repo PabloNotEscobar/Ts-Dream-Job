@@ -1,0 +1,38 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: fluid(8, 20);
+}
+
+.tabs__button {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 4px;
+  padding: fluid(8, 12) fluid(12, 18);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: $color-tab;
+  font-size: fluid(14, 18);
+  font-weight: 600;
+  line-height: 1.1;
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    color: $color-text;
+  }
+}
+
+.tabs__count {
+  font-size: 0.62em;
+  font-weight: 700;
+}
+
+.tabs__item--active .tabs__button {
+  border-color: $color-accent;
+  color: $color-accent;
+}

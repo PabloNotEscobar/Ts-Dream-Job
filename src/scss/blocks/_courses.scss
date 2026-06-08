@@ -1,0 +1,115 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.courses {
+  position: relative;
+  overflow: hidden;
+  padding: fluid(48, 96) 0 fluid(56, 110);
+}
+
+.courses__container {
+  position: relative;
+  width: min($container-max, $container-width);
+  margin: 0 auto;
+}
+
+.courses__header {
+  text-align: center;
+  margin-bottom: fluid(32, 64);
+}
+
+.courses__subtitle {
+  margin-bottom: fluid(10, 18);
+  font-size: fluid(11, 14);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.courses__title {
+  font-size: fluid(28, 48);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.courses__panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: fluid(16, 28);
+  margin-bottom: fluid(28, 50);
+}
+
+.courses__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: fluid(20, 30);
+}
+
+.courses__empty {
+  padding: fluid(32, 56) 0;
+  text-align: center;
+  font-size: fluid(16, 20);
+  color: $color-tab;
+}
+
+.courses__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: fluid(40, 72);
+}
+
+.courses__decor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.courses__decor--dots {
+  top: fluid(40, 70);
+  right: fluid(-30, 40);
+  width: fluid(120, 200);
+  aspect-ratio: 1;
+  background-image: radial-gradient($color-yellow 22%, transparent 24%);
+  background-size: 18px 18px;
+  -webkit-mask-image: linear-gradient(135deg, #000 0 45%, transparent 55%);
+  mask-image: linear-gradient(135deg, #000 0 45%, transparent 55%);
+  opacity: 0.85;
+}
+
+.courses__decor--quotes {
+  top: 38%;
+  left: fluid(-40, 18);
+  width: fluid(40, 70);
+  height: fluid(30, 52);
+  background-image:
+    radial-gradient($color-yellow 60%, transparent 62%),
+    radial-gradient(rgba($color-yellow, 0.55) 60%, transparent 62%);
+  background-repeat: no-repeat;
+  background-size: 45% 100%, 45% 100%;
+  background-position: 0 0, 100% 0;
+  -webkit-mask-image: radial-gradient(circle at 50% 0, transparent 38%, #000 40%);
+  mask-image: radial-gradient(circle at 50% 0, transparent 38%, #000 40%);
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.courses__decor--chevrons {
+  top: 56%;
+  right: fluid(-30, 28);
+  width: fluid(50, 90);
+  height: fluid(50, 90);
+  background-image:
+    linear-gradient(135deg, transparent 45%, rgba($color-yellow, 0.85) 45% 55%, transparent 55%),
+    linear-gradient(135deg, transparent 45%, rgba($color-yellow, 0.5) 45% 55%, transparent 55%);
+  background-repeat: no-repeat;
+  background-size: 100% 48%, 100% 48%;
+  background-position: 0 0, 0 100%;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}

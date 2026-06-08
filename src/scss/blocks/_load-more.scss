@@ -1,0 +1,23 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.load-more {
+  display: inline-flex;
+  align-items: center;
+  gap: fluid(8, 12);
+  padding: fluid(8, 12) fluid(12, 18);
+  border: none;
+  background: transparent;
+  color: $color-text;
+  font-size: fluid(15, 18);
+  font-weight: 700;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.load-more__icon {
+  flex: none;
+}

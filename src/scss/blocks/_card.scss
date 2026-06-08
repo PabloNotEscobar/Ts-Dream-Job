@@ -1,0 +1,97 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0 14px 40px rgba(17, 20, 45, 0.06);
+}
+
+.card__image {
+  position: relative;
+  aspect-ratio: 390 / 230;
+  overflow: hidden;
+  background-color: $color-yellow;
+  background-image:
+    radial-gradient(circle, transparent 30%, rgba(#ffffff, 0.16) 31% 32%, transparent 33%),
+    radial-gradient(circle, transparent 40%, rgba(#ffffff, 0.14) 41% 42%, transparent 43%),
+    radial-gradient(circle, transparent 50%, rgba(#ffffff, 0.12) 51% 52%, transparent 53%);
+  background-position: center;
+  background-size: cover;
+}
+
+.card__photo {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 72%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transform: translateX(-50%);
+  mix-blend-mode: multiply;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: fluid(16, 24) fluid(16, 24) fluid(20, 28);
+}
+
+.card__category {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: fluid(12, 14);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.card__category--marketing {
+  background: $badge-marketing;
+}
+
+.card__category--management {
+  background: $badge-management;
+}
+
+.card__category--hr {
+  background: $badge-hr;
+}
+
+.card__category--design {
+  background: $badge-design;
+}
+
+.card__category--development {
+  background: $badge-development;
+}
+
+.card__title {
+  margin-top: fluid(14, 22);
+  font-size: fluid(17, 20);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.card__meta {
+  display: flex;
+  align-items: center;
+  margin-top: fluid(16, 26);
+  font-size: fluid(14, 16);
+}
+
+.card__price {
+  font-weight: 700;
+  color: $color-accent;
+}
+
+.card__author {
+  margin-left: fluid(10, 14);
+  padding-left: fluid(10, 14);
+  border-left: 1px solid $color-border;
+  color: $color-muted;
+}

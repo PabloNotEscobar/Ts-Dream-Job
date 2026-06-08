@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+@function fluid($min, $max, $min-vw: 320, $max-vw: 1920) {
+  @if $min == $max {
+    @return #{$min}px;
+  }
+
+  $slope: math.div($max - $min, $max-vw - $min-vw);
+  $intercept: $min - $slope * $min-vw;
+  $vw: $slope * 100;
+
+  @return clamp(#{$min}px, #{$intercept}px + #{$vw}vw, #{$max}px);
+}

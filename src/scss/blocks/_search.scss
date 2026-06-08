@@ -1,0 +1,46 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.search {
+  position: relative;
+  flex: 0 1 fluid(260, 320);
+  min-width: 220px;
+}
+
+.search__input {
+  width: 100%;
+  height: fluid(46, 56);
+  padding: 0 fluid(44, 52) 0 fluid(16, 22);
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  background: #ffffff;
+  color: $color-text;
+  font-family: inherit;
+  font-size: fluid(14, 16);
+  transition: border-color 0.2s ease;
+
+  &::placeholder {
+    color: $color-muted;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-accent;
+  }
+}
+
+.search__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.search__button {
+  position: absolute;
+  top: 50%;
+  right: fluid(12, 18);
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: $color-text;
+  transform: translateY(-50%);
+}
